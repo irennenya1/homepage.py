@@ -30,8 +30,6 @@ selected4 = option_menu(None, ["Home", "Menu", "Kontak", 'Settings'],
     orientation="horizontal", manual_select=manual_select, key='menu_4')
 st.button(f"Next {st.session_state.get('menu_option', 1)}", key='switch_button')
 
-result = subprocess.run(['node', 'path/indeks.js'], capture_output=True, text=True)
-print(result.stdout) 
 
 st.sidebar.success("dapatkkan lebih banyak informasi. ")
 
