@@ -26,11 +26,6 @@ selected4 = option_menu(None, ["Home", "Menu", "Kontak", 'Settings'],
     icons=['house', 'cloud-upload', "list-task", 'gear'], 
     orientation="horizontal", manual_select=manual_select, key='menu_4')
 st.button(f"Next {st.session_state.get('menu_option', 1)}", key='switch_button')
-
-result = subprocess.run(['node', 'path/indeks.js'], capture_output=True, text=True)
-print(result.stdout) 
-
-
 # Fungsi untuk memuat animasi Lottie dari URL
 def load_lottieurl(url):
     r = requests.get(url)
